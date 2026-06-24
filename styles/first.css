@@ -14,7 +14,7 @@ header {background-color: black; color: #fff;}
 /* 부모 color가 a에 적용되지 않는 이유? */
 /* 실제론 적용됐으나, a태그에 기본적으로 내장된 파랑색이 상속된 값을 덮어서 보이지 않는다. */
 a {background-color: aqua;}
-/* a 태그는 블록, 인라인 모두 가능하나 css상으론 처음 a태그가 발표됐을 떄의 초기모습(인라인)을 가지고 있다. (나중에 블록형태로 css도 변경 가능) */
+/* a 태그는 블록, 인라인 모두 가능하나 css상으론 처음 a태그가 발표됐을 때의 초기모습(인라인)을 가지고 있다. (나중에 블록형태로 css도 변경 가능) */
 h3 {background-color: darkcyan;}
 em {background-color: blue;}
 /* 태그의 인라인, 블록 유형에 따라 적용 결과가 다를 수 있다. */
