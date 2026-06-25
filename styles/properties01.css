@@ -1,0 +1,42 @@
+.movie{
+    width:600px; height:max-content;/* hug 안적어도 기본값 */
+    background-color:#E2FFC9;
+    border:black solid 1px;
+    border-radius:25px;
+    padding:40px 0 40px 20px;
+}
+.movie > h1{
+    font-family:'Noto Sans Kr', '맑은 고딕';
+    font-weight:700;
+    font-size:1.5em;
+    letter-spacing:-0.02em;/* -2% */
+    line-height:1.2/* 120% line-height만 단위 안써도됨*/;
+    /* h1, contents_g 형제를 떨어뜨리기 위한 간격값 입력 */
+    margin-bottom:40px;
+}
+.movie > .contents_g{
+    margin-bottom:40px;
+}
+.movie > .contents_g > .slogan{
+    font-family:'Noto Sans Kr', '맑은 고딕';
+    font-weight:500;
+    font-size:1em;/* reset의 기본글자크기(16)와 동일하므로 생략가능 */
+    line-height:1.5em;
+    margin-bottom:15px;
+}
+.movie > .contents_g > .summary{
+    font-family:'Noto Sans Kr', '맑은 고딕';
+    font-weight:300;
+    font-size:0.875em;
+    line-height:1.5em;
+}
+.movie > .poster{
+    margin-bottom:40px;
+}
+.movie > .poster > img{}
+.movie > .story{
+    font-family:'Noto Sans Kr', '맑은 고딕';
+    line-height:1.7;
+    letter-spacing:0;
+    color:#222;
+}

@@ -1,0 +1,33 @@
+.movie{
+    width:300px; height:max-content;
+    background: #031613;
+background: linear-gradient(180deg, rgba(3, 22, 19, 1) 0%, rgba(13, 46, 42, 1) 50%, rgba(44, 142, 126, 1) 100%);
+border-radius:20px;
+padding:30px 30px 40px 30px;
+}
+.movie > .poster{
+    margin-bottom:15px;
+    
+}
+.movie > .contents{}
+.movie > .contents > h1{}
+.movie > .contents > .movie_info{
+    font-family:'Noto Sans Kr';
+    font-size:0.625em;
+    color:white;
+    margin-bottom: 8px;
+}
+.movie > .contents > .slogan{
+    font-family:'Noto Sans Kr';
+    font-size:0.875em;
+    font-weight:500;
+    color: white;
+    margin-bottom:10px;
+}
+.movie > .summary{
+    font-family:'Noto Sans Kr';
+    font-size:0.625em;
+    font-weight:300;
+    color: white;
+    line-height:1.3;
+}
