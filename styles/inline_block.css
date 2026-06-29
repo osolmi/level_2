@@ -1,0 +1,132 @@
+body{background-color: #ededed; height:200vh;}
+/* vh = viewport height : 사용자가 보는 화면 상대적 높이값 */
+#muji{
+    width:402px; height:max-content;
+    border:1px solid #000;
+    background-color: #fff;
+    /* ./ 경로 의미 : 현재 작성 파일 위치에서부터 경로 시작 */
+    /* ../ 경로 의미 : 현재 작성 위치에서 한번 위로 나가서 경로 시작 */
+}
+#muji > .ad{
+    background-image:url(../images/muji_ad_poster.jpg);
+    background-size:;
+    background-repeat: no-repeat;
+    background-color: #000;/* 배경색상은 항상 배경이미지 아래로 깔림 */
+    background-position:left top;
+    background-attachment:fixed;
+    width:100%;/* 피그마에서 w 채우기 설정 시(부모와 너비 같음) */
+    /* max-content는 100%와 다름. max-content는 자식의 최대크기와 같다는 뜻 */
+    height:510px;/* 피그마에서 h 고정값 입력 시(px 고정) */
+}
+#muji > .ad > h2{
+    font-family:'pretendard', 'sans-serif';
+font-size:1.375em; font-weight: 600;
+color:#fff;
+line-height:1.4;
+letter-spacing:-0.02em;
+margin-bottom:12px;
+}
+#muji > .ad > h2+p{
+    font-family:'pretendard', 'sans-serif';
+    color:#fff;
+    line-height:1.4;
+    letter-spacing:-0.02em;
+    
+}
+#muji > .ad > .ad_num{
+    background-color: rgba(0,0,0,0.5);/* 0.5 = 투명도 50% */
+    width:60px; line-height:25px;
+    border-radius:30px;
+    font-family:'pretendard', 'sans-serif';
+    font-size:0.875em;
+    color:#fff;
+    /* 수평정렬 text-align */
+    text-align:center;
+    /* 수직정렬 line-height, align-items */
+    /* line-height 행간(글자가 1~2줄 이상일때), (고정높이가 있는 수직 중앙 정렬) */
+}
+#muji > .ad > .ad_num > .current{
+    font-family:'pretendard', 'sans-serif';
+    font-size:0.875em;
+    color:#fff;
+}
+#muji > .ad > .ad_num > .total{
+    font-family:'pretendard', 'sans-serif';
+    font-size:0.875em;
+    color:#fff;
+}
+#muji > .menu_g{
+    display:flex;/* flex 설정을 정렬하고 싶은 자식의 부모에게 명령하면 자식들이 옆으로 가는 효과 */
+    padding:16px;
+}
+#muji > .menu_g > .menu{
+    background-color:#fff;
+    /* display:inline-block; */
+    display:flex; align-items: center;
+    width:max-content;
+    border:0.5px rgba(0,0,0,0.3) solid;
+    border-radius: 20px;
+    padding:6px 12px 6px 6px;/* menu(부모)와 자식 (thum, h3)사이 */
+    margin-right:12px;/* menu와 menu 형제사이 */
+}
+#muji > .menu_g > .menu > .thum{
+    width:20px; height:20px; border-radius:10px;
+    /* 피그마의 넘친 콘텐츠 숨기기(부모 안에서 자식이 벗어났을때 부모안에서만 보이기) */
+    overflow:hidden;
+    /* .thum 클래스를 가진 p와 형제 h3가 블록태그이기 때문에 수직으로 나열됨. 그 문제를 해결하기 위해 크기와 여백을 인식하고 옆으로 정렬하는 inline-block 적용 */
+    display:inline-block;
+    margin-right:8px;
+}
+#muji > .menu_g > .menu > .thum > img{width:100%;}
+#muji > .menu_g > .menu > h3{
+    font-family:'pretendard', 'sans serif';
+    font-size:0.75em;
+    color:#333;
+    display:inline-block;
+}
+#muji_v2{
+    width:402px; height:874px;
+    background-color: #fff;
+    border:1px #000 solid;
+}
+#muji_v2 > .ad{
+    background-image:url(../images/muji_ad_v2.jpg);
+    background-size: 100%;
+    background-position:center -70px;
+    background-repeat:no-repeat;
+    width:100%; height:510px;
+    background-attachment: fixed;
+}
+#muji_v2 > .ad > h2{
+    font-family:'pretendard', 'sans-serif';
+font-size:1.375em; font-weight: 600;
+color:#fff;
+line-height:1.4;
+letter-spacing:-0.02em;
+}
+#muji_v2 > .menu_g2{
+    display:flex;
+padding:16px;
+}
+#muji_v2 > .menu_g2 > .menu{
+    display:flex; align-items: center;
+    width:max-content;
+    background-color:#fff;
+    border: 0.5px solid rgba(60,60,60,0.5);
+    padding:3px 12px 3px 3px;
+    margin-right:8px;
+    border-radius:20px;
+}
+#muji_v2 > .menu_g2 > .menu > .thum2{
+    width:28px; height:28px; border-radius:20px;
+    overflow: hidden;
+    margin-right:8px;
+    display:inline-block;
+}
+#muji_v2 > .menu_g2 > .menu > .thum2 > img{height:100%; width:100%;}
+#muji_v2 > .menu_g2 > .menu > h3{
+    display:inline-block;
+    font-family:'pretendard' 'sans serif';
+    font-size:0.75em;
+    color:#3c3c3c;
+}
