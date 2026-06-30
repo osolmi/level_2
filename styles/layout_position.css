@@ -1,0 +1,23 @@
+body{background-color:#f5f5f5; height:2000px;}
+#wrap{/* nav가 움직이는 기준 부모 대상 */
+    position:relative;/* 기준설정값 */
+    background-color:#fff;
+    width:402px; height:874px;
+    display:flex;/* 피그마의 오토레이아웃 전환기념 */
+    flex-flow:column nowrap;/* 흐름, 줄바꿈 */
+}
+#wrap header{
+    background-color:#d9d9d9;
+    width:100%; /* 고정값 */
+    height: 100px; /* 부모의 100% 채우기(블록의 기본값) */
+}
+#wrap > nav{/* 부모 기준으로 움직이고 싶은 실제 대상 */
+    position:absolute;
+    top: 50px; right:30px;
+    width:100px; height:100px;
+    background-color: pink;
+}
+#top{
+    position: fixed;/* 페이지스크롤 관계없이 고정(body)기준*/
+    right: 50px; bottom:50px;
+}
